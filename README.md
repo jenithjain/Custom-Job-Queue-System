@@ -9,6 +9,12 @@
 </p>
 
 ---
+# Demo Video 
+
+
+https://github.com/user-attachments/assets/bfa84f5c-493e-41a4-b987-d9ea2a81ff5e
+
+
 
 ## Table of Contents
 
@@ -114,9 +120,44 @@ The only job type supported initially is `"send_email"`, where the worker simply
 ---
 
 ## Getting Started
+## 🚀 How to Run This Project
 
-### Clone & Setup
+Follow these steps to set up and run the custom job queue system locally:
+
+---
+
+### 🔧 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/custom_job_queue.git
-cd custom_job_queue
+git clone https://github.com/your-username/custom-job-queue.git
+cd custom-job-queue
+
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+
+```
+#  Start Redis Server (30 seconds)
+
+```bash
+cd path\to\Redis
+.\redis-server.exe
+```
+# Start the Worker Process 
+
+```bash
+python worker.py
+[Worker] Starting worker loop. Listening for jobs…
+```
+# Start the FastAPI Server
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+Swagger UI (interactive docs): http://localhost:8000/docs
+
+
