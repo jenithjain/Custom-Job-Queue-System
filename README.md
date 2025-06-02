@@ -14,39 +14,6 @@
 
 https://github.com/user-attachments/assets/bfa84f5c-493e-41a4-b987-d9ea2a81ff5e
 
-
-
-## Table of Contents
-
-1. [Project Overview](#project-overview)  
-2. [Architecture](#architecture)  
-3. [Features](#features)  
-4. [Prerequisites](#prerequisites)  
-5. [Getting Started](#getting-started)  
-   1. [Clone & Setup](#clone--setup)  
-   2. [Configure Environment Variables](#configure-environment-variables)  
-   3. [Install Dependencies](#install-dependencies)  
-   4. [Start Redis](#start-redis)  
-   5. [Run the Worker](#run-the-worker)  
-   6. [Run FastAPI Server](#run-fastapi-server)  
-6. [API Documentation](#api-documentation)  
-   1. [Submit a New Job](#submit-a-new-job)  
-   2. [Check Job Status](#check-job-status)  
-7. [How It Works (End-to-End Flow)](#how-it-works-end-to-end-flow)  
-   1. [Enqueue in Redis](#enqueue-in-redis)  
-   2. [Worker Processing & Retry Logic](#worker-processing--retry-logic)  
-   3. [Priority Ordering](#priority-ordering)  
-8. [Examples & Testing](#examples--testing)  
-   1. [High-Priority vs. Low-Priority](#high-priority-vs-low-priority)  
-   2. [Simulated Failures & Exponential Backoff](#simulated-failures--exponential-backoff)  
-   3. [Multiple Workers (Concurrency)](#multiple-workers-concurrency)  
-9. [Cleaning Up](#cleaning-up)  
-10. [Possible Extensions](#possible-extensions)  
-11. [Project Structure](#project-structure)  
-12. [License](#license)  
-
----
-
 ## Project Overview
 
 This project implements a **custom job queue system** using:
